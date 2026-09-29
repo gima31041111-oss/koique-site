@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#fffafb">
+<meta name="theme-color" content="#fafbff">
 <meta name="description" content="恋バナを、ゲームに。恋クエは、友達・恋人と一緒に楽しむオンライン質問パーティーゲーム。お問い合わせ、プライバシーポリシー、利用規約をご案内します。">
 <title>恋クエ♡ 公式サイト｜恋バナを、ゲームに。</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.getItem('koique-theme')==='pink'){document.documentElement.setAttribute('data-theme','pink')}}catch(e){}</script>
 </head>
 <body>
 <a class="skip-link" href="#main">本文へスキップ</a>
@@ -27,8 +28,8 @@
 <p class="release-note">ただいまリリース準備中です。</p>
 </div>
 <div class="screens" aria-label="実際のアプリのホーム画面">
-<figure class="screen pink"><img src="assets/home-screen-pink.webp" width="600" height="1304" alt="恋クエのピンクテーマのホーム画面。恋クエをはじめる、ルームに入る、関係性を選ぶメニュー。" fetchpriority="high"><figcaption><span></span> PINK</figcaption></figure>
-<figure class="screen blue"><img src="assets/home-screen-blue.webp" width="600" height="1304" alt="恋クエのブルーテーマのホーム画面。ピンクテーマと同じ機能を青い配色で楽しめます。"><figcaption><span></span> BLUE</figcaption></figure>
+<figure class="screen pink"><img src="assets/home-screen-pink.webp" width="600" height="1304" alt="恋クエのピンクテーマのホーム画面。恋クエをはじめる、ルームに入る、関係性を選ぶメニュー。" fetchpriority="high"><figcaption><button type="button" class="theme-pick" data-theme-choice="pink" aria-pressed="false"><span aria-hidden="true"></span>PINK</button></figcaption></figure>
+<figure class="screen blue"><img src="assets/home-screen-blue.webp" width="600" height="1304" alt="恋クエのブルーテーマのホーム画面。ピンクテーマと同じ機能を青い配色で楽しめます。"><figcaption><button type="button" class="theme-pick" data-theme-choice="blue" aria-pressed="true"><span aria-hidden="true"></span>BLUE</button></figcaption></figure>
 <p class="screens-note">好きな色で、あなたらしく。</p>
 </div>
 </section>
@@ -38,7 +39,7 @@
 <!-- Legal/privacy-policy.md 全文。本文は原文を保持。 -->
 <h2>プライバシーポリシー</h2>
 <h3>1. はじめに</h3>
-<p>「恋クエ」(以下「本アプリ」)は、儀満聖資（以下「当方」）が提供する、友達・恋人向けの
+<p>「恋クエ」(以下「本アプリ」)は、儀満聖資(以下「当方」)が提供する、友達・恋人向けの
 オンライン質問パーティーゲームです。本ポリシーは、本アプリが取得する情報とその取扱いに
 ついて説明します。</p>
 <h3>2. 収集する情報</h3>
@@ -174,5 +175,6 @@ ATT)に同意した場合、広告識別子(IDFA)等の情報がGoogle社およ�
 </div></div>
 </main>
 <footer class="footer wrap"><a class="brand" href="#top">恋クエ<span>♡</span></a><p>恋バナを、ゲームに。</p><a class="back-top" href="#top">ページの先頭へ ↑</a><small>© 2026 恋クエ</small></footer>
+<script src="theme.js" defer></script>
 </body>
 </html>
